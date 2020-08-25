@@ -1,131 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
 
-<LinearLayout
-    android:id="@+id/first_image"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toTopOf="@id/first_image2"
-    app:layout_constraintRight_toLeftOf="@id/first_image1">
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
     <ProgressBar
         android:id="@+id/progressBAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="204dp"
-        android:visibility="gone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/nasa_image"
+        app:layout_constraintEnd_toEndOf="@+id/nasa_image"
+        app:layout_constraintStart_toStartOf="@+id/nasa_image"
+        app:layout_constraintTop_toTopOf="@+id/nasa_image" />
+
     <ImageView
         android:id="@+id/nasa_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:contentDescription="nasa_photo"/>
-    </LinearLayout>
+        android:layout_width="88dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="148dp"
+        android:contentDescription="nasa_photo"
+        app:layout_constraintBottom_toTopOf="@+id/nasa_image2"
+        app:layout_constraintEnd_toStartOf="@+id/nasa_image1"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <LinearLayout
-        android:id="@+id/first_image1"
-        android:orientation="vertical"
+    <ProgressBar
+        android:id="@+id/progressBAR1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/first_image3"
-        app:layout_constraintLeft_toRightOf="@id/first_image">
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-        <ProgressBar
-            android:id="@+id/progressBAR1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="181dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="204dp"
-            android:visibility="gone"/>
-        <ImageView
-            android:id="@+id/nasa_image1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:contentDescription="nasa_photo"/>
-    </LinearLayout>
+        app:layout_constraintBottom_toBottomOf="@+id/nasa_image1"
+        app:layout_constraintEnd_toEndOf="@+id/nasa_image1"
+        app:layout_constraintStart_toStartOf="@+id/nasa_image1"
+        app:layout_constraintTop_toTopOf="@+id/nasa_image1" />
 
-    <LinearLayout
-        android:id="@+id/first_image2"
-        android:orientation="vertical"
+    <ImageView
+        android:id="@+id/nasa_image1"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="68dp"
+        android:contentDescription="nasa_photo"
+        app:layout_constraintBottom_toTopOf="@+id/nasa_image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBAR2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toLeftOf="@id/first_image3"
-        app:layout_constraintTop_toBottomOf="@id/first_image">
+        app:layout_constraintBottom_toBottomOf="@+id/nasa_image2"
+        app:layout_constraintEnd_toEndOf="@+id/nasa_image2"
+        app:layout_constraintStart_toStartOf="@+id/nasa_image2"
+        app:layout_constraintTop_toTopOf="@+id/nasa_image2" />
 
-        <TextView
-            android:id="@+id/title2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-        <ProgressBar
-            android:id="@+id/progressBAR2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="181dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="204dp"
-            android:visibility="gone"/>
-        <ImageView
-            android:id="@+id/nasa_image2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:contentDescription="nasa_photo"/>
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/nasa_image2"
+        android:layout_width="94dp"
+        android:layout_height="81dp"
+        android:layout_marginBottom="224dp"
+        android:contentDescription="nasa_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nasa_image3"
+        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/first_image3"
-        android:orientation="vertical"
+    <ProgressBar
+        android:id="@+id/progressBAR3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/first_image2"
-        app:layout_constraintTop_toBottomOf="@id/first_image1"
-        app:layout_constraintBottom_toBottomOf="parent">
-        <TextView
-            android:id="@+id/title3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"/>
-        <ProgressBar
-            android:id="@+id/progressBAR3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="181dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="182dp"
-            android:layout_marginBottom="204dp"
-            android:visibility="gone"/>
+        app:layout_constraintBottom_toBottomOf="@+id/nasa_image3"
+        app:layout_constraintEnd_toEndOf="@+id/nasa_image3"
+        app:layout_constraintStart_toStartOf="@+id/nasa_image3"
+        app:layout_constraintTop_toTopOf="@+id/nasa_image3" />
 
-        <ImageView
-            android:id="@+id/nasa_image3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:contentDescription="nasa_photo"/>
+    <ImageView
+        android:id="@+id/nasa_image3"
+        android:layout_width="79dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="68dp"
+        android:contentDescription="nasa_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nasa_image1" />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKKK!"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="331dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
